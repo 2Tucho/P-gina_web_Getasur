@@ -1,57 +1,8 @@
-header {
-    background-color: var(--tomato);
-    color: var(--yinmn-blue);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    border: 2px solid var(--mint);
-    z-index: 1;
+:root {
+    --celestial-blue: #38a3faff;
+    font-family: 'Titillium Web';
 }
 
-#jugadores > article > img {
-    border-radius: 20px;
-    display: block;
- }
-  
-#jugadores {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-    justify-content: space-around;
- }
-  
-#jugadores > article:hover .overlay {
-    opacity: 1;
- }
-  
-#jugadores > article {
-    position: relative;
-    margin: 20px 20px;
- }
-  
-.overlay {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    transition: 0.5s ease;
-    background-color: blue;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 20px;
- }
-  
-.text {
-    color: white;
-    font-size: 20px;
- }
+h1 {
+    font-size: 100px;
+}

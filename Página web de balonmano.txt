@@ -1,0 +1,13 @@
+Página web sobre el CB Getasur
+Referencia: https://www.balonmanoalcobendas.es/Calendarios/bm-alcobendas/cajasur-cbm/
+
+Habrá una portada que será una especie de resumen de otras partes de la página
+
+  - Club (historia)
+  - Noticias
+  - Plantilla (del primer equipo femenino y masculino)
+  - Clasificaciones (de las diferentes categorías)
+  - Patrocinadores (fotos de los anunciantes)
+  - Contacto (con el formulario)
+
+Fijarse en el ejemplo en el favicon ese, el icono que hay al lado del nombre de la página en la pestaña

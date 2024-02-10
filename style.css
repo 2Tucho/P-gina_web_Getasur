@@ -7,6 +7,8 @@
 * {
     font-family: 'Titillium Web';
     scroll-behavior: smooth;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 header {
@@ -50,6 +52,59 @@ main > h1 {
     margin-bottom: 50px;
     font-size: 52px;
 }
+
+.jugadores > article > img {
+    border-radius: 20px;
+    display: block;
+  }
+  
+  .jugadores {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .jugadores > article:hover .overlay {
+    opacity: 1;
+  }
+  
+  .jugadores > article {
+    position: relative;
+    margin: 20px 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    transition: 0.5s ease;
+    background-color: var(--celestial-blue);
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+  }
+
+  .dorsal {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .textoJugadores {
+    color: white;
+    font-size: 20px;
+  }
 
 /* CLASES */
 .logoRotulo {

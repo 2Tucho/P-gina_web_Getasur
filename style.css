@@ -53,12 +53,20 @@ main > h1 {
     font-size: 52px;
 }
 
-.jugadores > article > img {
-    border-radius: 20px;
-    display: block;
-  }
-  
-  .jugadores {
+
+
+/* CLASES */
+.dorsal {
+    color: white;
+    font-size: 30px;
+}
+
+.fotoNoticias {
+    width: 90vw;
+    align-items: center;
+}
+
+.jugadores {
     cursor: pointer;
     width: 100%;
     height: 100%;
@@ -67,18 +75,28 @@ main > h1 {
     align-content: space-around;
     align-items: center;
     justify-content: space-around;
-  }
+    margin-bottom: 60px;
+}
   
-  .jugadores > article:hover .overlay {
+.jugadores > article:hover .overlay {
     opacity: 1;
-  }
-  
-  .jugadores > article {
+}
+
+.jugadores > article {
     position: relative;
     margin: 20px 20px;
-  }
-  
-  .overlay {
+}
+
+.jugadores > article > img {
+    border-radius: 20px;
+    display: block;
+}
+
+.logoRotulo {
+    width: 60px;
+}
+
+.overlay {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -94,45 +112,34 @@ main > h1 {
     left: 0;
     right: 0;
     border-radius: 20px;
-  }
-
-  .dorsal {
-    color: white;
-    font-size: 30px;
-  }
-  
-  .textoJugadores {
-    color: white;
-    font-size: 20px;
-  }
-
-/* CLASES */
-.logoRotulo {
-    width: 60px;
 }
 
 .noticiasGetasur {
     padding-bottom: 15px;
     padding-top: 24px;
     margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-bottom: 2px solid var(--celestial-blue);
     justify-content: center;
     font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .noticiasGetasurUltima {
     padding-bottom: 15px;
     padding-top: 24px;
     margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-bottom: none;
     justify-content: center;
     text-align: justify;
     font-size: 22px;
-}
-
-.fotoNoticias {
-    width: 90vw;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .noticiasGetasur > h2 {
@@ -143,7 +150,16 @@ main > h1 {
     text-align: justify;
 }
 
+.textoJugadores {
+    color: white;
+    font-size: 20px;
+}
+
 /* ID */
 #paginaNoticias {
     margin-bottom: 40px;
+}
+
+#parrafosSueltos {
+    justify-content: flex-start;
 }

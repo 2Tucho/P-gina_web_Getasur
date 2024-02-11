@@ -4,6 +4,30 @@
 }
 
 /* ELEMENTOS */
+
+
+
+table {
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+    vertical-align: middle;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.filaGris {
+    background-color: rgb(212, 212, 212);
+    margin-bottom: 8px;
+}
+
+
 * {
     font-family: 'Titillium Web';
     scroll-behavior: smooth;
@@ -64,6 +88,12 @@ main > h1 {
 .fotoNoticias {
     width: 90vw;
     align-items: center;
+}
+
+.fotosPatrocinadores {
+    width: 70%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .jugadores {
@@ -139,7 +169,6 @@ main > h1 {
     font-size: 22px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .noticiasGetasur > h2 {
@@ -150,12 +179,34 @@ main > h1 {
     text-align: justify;
 }
 
+.patrocinadores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.patrocinadores > h3 {
+    padding-top: 70px;
+    text-align: left;
+}
+
+.patrocinadores.ultimo {
+    padding-bottom: 100px;
+}
+
 .textoJugadores {
     color: white;
     font-size: 20px;
 }
 
 /* ID */
+#agradecimiento {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
 #paginaNoticias {
     margin-bottom: 40px;
 }

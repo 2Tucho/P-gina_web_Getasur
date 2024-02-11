@@ -27,101 +27,104 @@
             <p>Puedes visitarnos en nuestros pabellones o enviarnos la consulta a través del formulario</p>
         </article>
 
+        <section class="direccionPabellones">
+          <div>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.31547897494605%2C-3.743754440475473&z=17"><img src="../assets/pabellonAlhondiga.jpg" alt="Pabellón Alhóndiga-Sector III" class="fotoPabellon"></a>
+            <address>
+              <h4>Pabellón Alhóndiga-Sector III</h4>
+              <p>Carr. de Leganés, s/n, 28905 Getafe, Madrid</p>
+              <P>123 456 789</P>
+              <P>info@balonmanogetasur.es</P>
+            </address>
+          </div>
+          
+          <div>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.3265446%2C-3.7386480000000066&z=17"><img src="../assets/pabellonBercial.jpg" alt="Pabellón Rafael Vargas del Bercial" class="fotoPabellon"></a>
+            <address>
+              <h4>Pabellón Rafael Vargas</h4>
+              <p>Av. del Parque, 6-14, 28907 Getafe, Madrid</p>
+              <P>123 456 789</P>
+              <P>info@balonmanogetasur.es</P>
+            </address>
+          </div>
+        </section>
+
         <section>
-            <div>
-                <img src="../assets/pabellonAlhondiga.jpg" alt="Pabellón Alhóndiga-Sector III">
-                <article>
-                    <h5>Pabellón Alhóndiga-Sector III</h5>
-                    <p>Carr. de Leganés, s/n, 28905 Getafe, Madrid</p>
-                    <P>123 456 789</P>
-                    <P>info@balonmanogetasur.es</P>
-                </article>
-            </div>
+          <form action="#" id="formulario"><h3>Envíanos tu consulta aquí</h3>
+            <label for="fname">Nombre *</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder=" Introduce nombre..."
+              minlength="3"
+              maxlenght="30"
+              required
+            > 
 
-            <div>
-                <img src="../assets/pabellonBercial.jpg" alt="Pabellón Rafael Vargas del Bercial">
-                <article>
-                    <h5>Pabellón Rafael Vargas</h5>
-                    <p>Av. del Parque, 6-14, 28907 Getafe, Madrid</p>
-                    <P>123 456 789</P>
-                    <P>info@balonmanogetasur.es</P>
-                </article>
-            </div>
+            <label for="lname">Apellidos *</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder=" Introduce apellidos..."
+              minlength="3"
+              maxlenght="30"
+              required
+            >
 
-            <form action="#"><h3>Envíanos tu consulta aquí</h3>
-                <label for="fname">Nombre *</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder=" Introduce nombre..."
-                  minlength="3"
-                  maxlenght="30"
-                  required
-                > 
+            <label for="tlf">Teléfono *</label>
+            <input
+              type="tel"
+              id="tlf"
+              name="tlf"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              placeholder=" Introduce teléfono..."
+              required
+            >
 
-                <label for="lname">Apellidos *</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  placeholder=" Introduce apellidos..."
-                  minlength="3"
-                  maxlenght="30"
-                  required
-                />
+            <label for="fname">E-mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" Introduce email..."
+              required
+            >
 
-                <label for="tlf">Teléfono *</label>
-                <input
-                  type="tel"
-                  id="tlf"
-                  name="tlf"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                  placeholder=" Introduce teléfono..."
-                  required
-                />
+            <label for="departamento">¿Con qué departamento deseas contactar? *</label>
+            <select id="departamento" name="departamento" required>
+              <option value="infoGeneral">Información General</option>
+              <option value="escuela">Escuela</option>
+              <option value="areaSocial">Área Social</option>
+              <option value="areaDeportiva">Área Deportiva</option>
+              <option value="areaComunicacion">Área de Comunicación</option>
+              <option value="areaMarketing">Área de Marketing</option>
+              <option value="administracion">Administración</option>
+            </select>
 
-                <label for="fname">E-mail *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder=" Introduce email..."
-                  required
-                />
-
-                <label for="departamento">¿Con qué departamento deseas contactar? *</label>
-                <select id="departamento" name="departamento">
-                  <option value="infoGeneral">Información General</option>
-                  <option value="escuela">Escuela</option>
-                  <option value="areaSocial">Área Social</option>
-                  <option value="areaDeportiva">Área Deportiva</option>
-                  <option value="areaComunicacion">Área de Comunicación</option>
-                  <option value="areaMarketing">Área de Marketing</option>
-                  <option value="administracion">Administración</option>
-                </select>
-
-                <label for="mensaje">Mensaje *</label>
-                <textarea
-                  rows="5"
-                  cols="30"
-                  name="mensaje"
-                  wrap="hard"
-                  required
-                ></textarea
-                >
-
-                <label>
-                  <input type="checkbox" id="accept" value="accept" name="accept" />He leído y acepto la Política de Privacidad.
-                </label>
-
-                <p>Es obligatorio rellenar los campos con un * (asterisco) en ellos</p>
-
-                <p>Antes de rellenar el formulario recuerda que es importante que conozcas que me preocupo sobre la protección de tus datos personales. Responsable: Club Balonmano Alcobendas Finalidad: Envío de artículos del blog, novedades, así como el aviso de nuevas actividades de carácter comercial  de balonmanoalcobendas.es Legitimación: Consentimiento del interesado. Destinatarios: No se cederán datos a terceros, salvo autorización expresa u obligación legal. Derechos: Tienes derecho a acceder, rectificar y suprimir los datos en todo momento, portabilidad de los datos, limitación u oposición a su tratamiento, transparencia y derecho a no ser objeto de decisiones automatizadas. Plazo de conservación de los datos: Hasta que no se solicite su supresión por el interesado. Información adicional: Puede consultar la información adicional y detallada sobre nuestra <a href="#">Política de Privacidad y Aviso Legal</a></p>
-
-                <input type="submit" value="Enviar" />
+            <label for="mensaje">Mensaje *</label>
+            <textarea
+              rows="5"
+              cols="30"
+              name="mensaje"
+              wrap="hard"
+              required
+            ></textarea>
                 
-            </form>
+            <div id="politicaPrivacidad">
+              <input type="checkbox" id="accept" value="accept" name="accept" required>
+              <label>He leído y acepto la Política de Privacidad. *</label>
+            </div>
+
+            <div>
+              <p>Es obligatorio rellenar los campos con un * (asterisco) en ellos</p>
+              <p>Antes de rellenar el formulario recuerda que es importante que conozcas que me preocupo sobre la protección de tus datos personales. Responsable: Club Balonmano Alcobendas Finalidad: Envío de artículos del blog, novedades, así como el aviso de nuevas actividades de carácter comercial  de balonmanoalcobendas.es Legitimación: Consentimiento del interesado. Destinatarios: No se cederán datos a terceros, salvo autorización expresa u obligación legal. Derechos: Tienes derecho a acceder, rectificar y suprimir los datos en todo momento, portabilidad de los datos, limitación u oposición a su tratamiento, transparencia y derecho a no ser objeto de decisiones automatizadas. Plazo de conservación de los datos: Hasta que no se solicite su supresión por el interesado. Información adicional: Puede consultar la información adicional y detallada sobre nuestra <a href="#">Política de Privacidad y Aviso Legal</a></p>
+            </div>
+
+            <input type="submit" value="Enviar">
+                
+          </form>
         </section>
     </main>
 </body>

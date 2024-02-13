@@ -1,31 +1,76 @@
 :root {
     --celestial-blue: #38a3faff;
+    --celtic-blue: #3678d3ff;
     
 }
 
 /* ELEMENTOS */
 
-
-
-table {
-    text-align: center;
+#titulo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--celestial-blue);
+    position: static;
 }
 
-td {
-    border: 1px solid black;
-    vertical-align: middle;
+#titulo > h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#titulo > h3 {
+    text-align: center;
+}
+
+#fotoPortada {
+    width: 80%;
+    border: 5px solid black;
+    margin-top: 20px;
+}
+
+#mainPortada {
+    margin: 0;
+}
+
+#navegador {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#navegador > a {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--celestial-blue);
+    margin-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    border: 8px solid var(--celtic-blue);
+}
+
+
+.filaGris > td:nth-child(1) {
     width: 100px;
-    word-wrap: break-word;
 }
-
-.filaGris {
-    background-color: rgb(212, 212, 212);
-    margin-bottom: 8px;
+  
+/* the second */
+.filaGris > td:nth-child(2) {
+    width: 200px;
 }
+  
+/* the third */
+.filaGris > td:nth-child(3) {
+    width: 300px;
+}
+   
 
 
 * {

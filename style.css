@@ -5,79 +5,89 @@
 }
 
 /* ELEMENTOS */
-
-#titulo {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--celestial-blue);
-    position: static;
+#tablaMadre {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
-#titulo > h1 {
+table {
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.filaGris {
+    background-color: rgb(241, 241, 241);
+}
+
+.bordeArriba {
+    border-top: 1px solid grey;
+}
+
+.bordeAbajo {
+    border-bottom: 1px solid grey;
+}
+
+td {
+    padding: 0;
+}
+
+td > table {
+    width: 100%;
+}
+
+.celdaFecha {
+    width: 20%;
+    font-size: 13px;
+    color: grey;
     text-align: center;
-    font-size: 48px;
 }
 
-#titulo > h3 {
+.celdaHora {
+    width: 15%;
+    font-size: 13px;
+    color: grey;
     text-align: center;
 }
 
-#fotoPortada {
-    width: 80%;
-    border: 5px solid black;
-    margin-top: 20px;
+.celdaVacia {
+    width: 15%;
 }
 
-#mainPortada {
-    margin: 0;
+.celdaLugar {
+    width: 50%;
+    font-size: 13px;
+    color: grey;
+    text-align: left;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-#navegador {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.celdaEquipo {
+    width: 40%;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-#navegador > a {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100vw;
+.celdaResultado {
+    width: 20%;
     text-align: center;
-    background-color: var(--celestial-blue);
-    margin-left: 0;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-size: 48px;
-    border: 8px solid var(--celtic-blue);
 }
-
-
-.filaGris > td:nth-child(1) {
-    width: 100px;
-}
-  
-/* the second */
-.filaGris > td:nth-child(2) {
-    width: 200px;
-}
-  
-/* the third */
-.filaGris > td:nth-child(3) {
-    width: 300px;
-}
-   
-
 
 * {
     font-family: 'Titillium Web';
     scroll-behavior: smooth;
     margin-left: 0;
     margin-right: 0;
+}
+
+body {
+    margin-top: 0;
 }
 
 header {
@@ -288,10 +298,61 @@ form > input, form > select, form > textarea {
     align-items: flex-start;
 }
 
+#fotoPortada {
+    width: 80%;
+    border: 5px solid black;
+    margin-top: 20px;
+}
+
+#mainPortada {
+    margin: 0;
+}
+
+#navegador {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#navegador > a {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--celestial-blue);
+    margin-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    border: 8px solid var(--celtic-blue);
+}
+
 #paginaNoticias {
     margin-bottom: 40px;
 }
 
 #parrafosSueltos {
     justify-content: flex-start;
+}
+
+#titulo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--celestial-blue);
+    position: static;
+    margin-bottom: 70px;
+}
+
+#titulo > h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#titulo > h3 {
+    text-align: center;
 }

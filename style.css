@@ -1,84 +1,9 @@
 :root {
     --celestial-blue: #38a3faff;
     --celtic-blue: #3678d3ff;
-    
 }
 
 /* ELEMENTOS */
-#tablaMadre {
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
-}
-
-table {
-    border-collapse: collapse;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
-}
-
-.filaGris {
-    background-color: rgb(241, 241, 241);
-}
-
-.bordeArriba {
-    border-top: 1px solid grey;
-}
-
-.bordeAbajo {
-    border-bottom: 1px solid grey;
-}
-
-td {
-    padding: 0;
-}
-
-td > table {
-    width: 100%;
-}
-
-.celdaFecha {
-    width: 20%;
-    font-size: 13px;
-    color: grey;
-    text-align: center;
-}
-
-.celdaHora {
-    width: 15%;
-    font-size: 13px;
-    color: grey;
-    text-align: center;
-}
-
-.celdaVacia {
-    width: 15%;
-}
-
-.celdaLugar {
-    width: 50%;
-    font-size: 13px;
-    color: grey;
-    text-align: left;
-    padding-bottom: 6px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.celdaEquipo {
-    width: 40%;
-    font-size: 12px;
-    font-weight: bold;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.celdaResultado {
-    width: 20%;
-    text-align: center;
-}
-
 * {
     font-family: 'Titillium Web';
     scroll-behavior: smooth;
@@ -140,7 +65,71 @@ form > input, form > select, form > textarea {
     margin: 10px;
 }
 
+table {
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+td {
+    padding: 0;
+}
+
+td > table {
+    width: 100%;
+}
+
 /* CLASES */
+.bordeArriba {
+    border-top: 1px solid grey;
+}
+
+.bordeAbajo {
+    border-bottom: 1px solid grey;
+}
+
+.celdaFecha {
+    width: 20%;
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+}
+
+.celdaHora {
+    width: 15%;
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+}
+
+.celdaVacia {
+    width: 15%;
+}
+
+.celdaLugar {
+    width: 50%;
+    font-size: 13px;
+    color: grey;
+    text-align: left;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.celdaEquipo {
+    width: 40%;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: left;
+}
+
+.celdaResultado {
+    width: 20%;
+    text-align: left;
+}
+
 .direccionPabellones {
     line-height: 1;
 }
@@ -152,6 +141,11 @@ form > input, form > select, form > textarea {
 .dorsal {
     color: white;
     font-size: 30px;
+}
+
+.filaGris {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
 }
 
 .fotoNoticias {
@@ -280,6 +274,18 @@ form > input, form > select, form > textarea {
     margin-bottom: 30px;
 }
 
+#celdaIzq {
+    text-align: left;
+}
+
+#clasificacion {
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 60px;
+}
+
 #formulario {
     display: flex;
     flex-direction: column;
@@ -306,6 +312,9 @@ form > input, form > select, form > textarea {
 
 #mainPortada {
     margin: 0;
+}
+#mainClasificaciones > h2 {
+    padding-top: 30px;
 }
 
 #navegador {
@@ -334,6 +343,13 @@ form > input, form > select, form > textarea {
 
 #parrafosSueltos {
     justify-content: flex-start;
+}
+
+#tablaMadre {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    width: 100%;
 }
 
 #titulo {

@@ -313,7 +313,7 @@ td > table {
 #mainPortada {
     margin: 0;
 }
-#mainClasificaciones > h2 {
+#mainClasificacion > h2 {
     padding-top: 30px;
 }
 
@@ -334,11 +334,51 @@ td > table {
     text-decoration: none;
     color: white;
     font-size: 48px;
-    border: 8px solid var(--celtic-blue);
+    border-top: 8px solid var(--celtic-blue);
+}
+
+#navegadorUltimo {
+    border-bottom: 8px solid var(--celtic-blue);
 }
 
 #paginaNoticias {
     margin-bottom: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    #titulo > h1 {
+        font-size: 5rem;
+    }
+    #titulo > h3 {
+        font-size: 3rem;
+    }
+    header {
+        font-size: 1.8rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    main > h1 {
+        font-size: 5rem;
+    }
+    article > h2 {
+        font-size: 200%;
+    }
+    article > p {
+        font-size: 130%;
+    }
+    #parrafosSueltos {
+        font-size: 130%;
+    }
+    main > h2 {
+        font-size: 280%;
+    }
+    .dorsal {
+        font-size: 1.6rem;
+    }
+    .textoJugadores {
+        font-size: 1.4rem;
+    }
+    
 }
 
 #parrafosSueltos {
@@ -366,7 +406,6 @@ td > table {
 
 #titulo > h1 {
     text-align: center;
-    font-size: 48px;
 }
 
 #titulo > h3 {

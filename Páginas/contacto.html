@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
 </head>
 <body>
@@ -29,7 +30,7 @@
 
         <section class="direccionPabellones" >
           <div>
-            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.31547897494605%2C-3.743754440475473&z=17"><img src="../assets/pabellonAlhondiga.jpg" alt="Pabellón Alhóndiga-Sector III" class="fotoPabellon" target="_blank"></a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.31547897494605%2C-3.743754440475473&z=17" target="_blank"><img src="../assets/pabellonAlhondiga.jpg" alt="Pabellón Alhóndiga-Sector III" class="fotoPabellon"></a>
             <address>
               <h4>Pabellón Alhóndiga-Sector III</h4>
               <p>Carr. de Leganés, s/n, 28905 Getafe, Madrid</p>
@@ -39,7 +40,7 @@
           </div>
           
           <div>
-            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.3265446%2C-3.7386480000000066&z=17"><img src="../assets/pabellonBercial.jpg" alt="Pabellón Rafael Vargas del Bercial" class="fotoPabellon" target="_blank"></a>
+            <a href="https://www.google.com/maps/d/viewer?mid=1WPYuPqUt6wiGkrzCRFCfQcXnc88&hl=en_US&ll=40.3265446%2C-3.7386480000000066&z=17" target="_blank"><img src="../assets/pabellonBercial.jpg" alt="Pabellón Rafael Vargas del Bercial" class="fotoPabellon"></a>
             <address>
               <h4>Pabellón Rafael Vargas</h4>
               <p>Av. del Parque, 6-14, 28907 Getafe, Madrid</p>
@@ -79,7 +80,7 @@
               id="tlf"
               name="tlf"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-              placeholder=" Introduce teléfono..."
+              placeholder=" Introduce teléfono: 000 000 000"
               required
             >
 
@@ -94,6 +95,7 @@
 
             <label for="departamento">¿Con qué departamento deseas contactar? *</label>
             <select id="departamento" name="departamento" required>
+              <option value="eligeDepartamento"> -Elige un departamento- </option> <!--Lo creo para luego en la validación del JS decirle que si el value = esto que le ponga mensaje de error -->
               <option value="infoGeneral">Información General</option>
               <option value="escuela">Escuela</option>
               <option value="areaSocial">Área Social</option>

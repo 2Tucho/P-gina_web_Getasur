@@ -58,6 +58,11 @@ main > h1 {
     font-size: 52px;
 }
 
+main > article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 form > input, form > select, form > textarea {
     width: 90%;
     border-radius: 20px;
@@ -103,11 +108,11 @@ td > table {
 }
 
 .celdaVacia {
-    width: 15%;
+    width: 10%;
 }
 
 .celdaLugar {
-    width: 50%;
+    width: 55%;
     font-size: 13px;
     color: grey;
     text-align: left;
@@ -378,7 +383,49 @@ td > table {
     .textoJugadores {
         font-size: 1.4rem;
     }
-    
+    #mainClasificacion > h3 {
+        font-size: 2.4rem;
+    }
+    .celdaFecha, .celdaHora, .celdaLugar, .celdaEquipo, .celdaResultado {
+        font-size: 1.4rem;
+        text-align: center;
+        align-items: center;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    #clasificacion {
+        font-size: 1.4rem;
+    }
+    main > p {
+        font-size: 1.6rem;
+    }
+    #agradecimiento {
+        font-size: 2rem;
+    }
+    .patrocinadores {
+        font-size: 2rem;
+    }
+    .fotosPatrocinadores {
+        width: 50%;
+    }
+    main > article > h1 {
+        font-size: 2.4rem;
+    }
+    main > article > p {
+        font-size: 1.8rem;
+    }
+    address {
+        font-size: 1.8rem;
+    }
+    #formulario > h3 {
+        font-size: 2.6rem;
+    }
+    #formulario, #formulario > input, #formulario > select, #formulario > textarea {
+        font-size: 1.8rem;
+    }
+    #politicaPrivacidad {
+        
+    }
 }
 
 #parrafosSueltos {
